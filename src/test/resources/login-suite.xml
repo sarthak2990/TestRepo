@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login Suite" parallel="methods" thread-count="1">
+    <!--    Implementing test fail retry listner-->
+    <listeners>
+        <listener class-name="com.domain.helpers.AnnotationTransformer"/>
+    </listeners>
+    <test name="Checkout tests">
+        <classes>
+              <class name="com.challenge.CheckoutTests"/>
+        </classes>
+    </test>
+</suite>
